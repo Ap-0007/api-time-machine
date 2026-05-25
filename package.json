@@ -1,0 +1,15 @@
+{
+  "name": "api-time-machine",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+"scripts": {
+    "dev:vault": "pnpm --filter @atm/vault dev",
+    "dev:extension": "pnpm --filter @atm/extension dev",
+    "build:vault": "pnpm --filter @atm/vault build",
+    "build:extension": "pnpm --filter @atm/extension build",
+    "build": "pnpm build:vault && pnpm build:extension"
+  }
+}

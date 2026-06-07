@@ -1,2 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Database & user data
+*.db
+*.db-shm
+*.db-wal
+
+# Recordings — may contain secrets, never commit
+*.atm
+
+# Env / secrets
 .env
-.env.local
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
